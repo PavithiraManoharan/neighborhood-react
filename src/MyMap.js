@@ -6,8 +6,8 @@ import mapStyles from './mapStyles.json'
 import ReactFoursquare from 'react-foursquare'
 
 var foursquare = ReactFoursquare({
-    clientID: 'I35VHQNE1A5YIW0SCEGXNVAQ4UOVGEORZV5X5V2ABI4PUSCF',
-    clientSecret: 'JT3X20U4TUXLKHICFO5VB3HXOH4S2GFWOPW3IJY5YF1BRWER'
+    clientID: '',
+    clientSecret: ''
 });
 
 var params = {
@@ -128,6 +128,6 @@ MyMap.propTypes = {
     // allLocations: PropTypes.array.isRequired
 }
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBck9KYKnvVvEeYaJdZfRAGLGi1MA4FSAw',
+    apiKey: '',
     libraries: ['places']
 })(MyMap)
