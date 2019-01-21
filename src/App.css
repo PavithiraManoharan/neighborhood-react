@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  position: relative;
+  height: 500px !important;
 }
 
 .App-logo {
@@ -22,6 +24,11 @@
   color: #61dafb;
 }
 
+#myMap {
+  height: 500px !important;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hello {
+  position: absolute;
+ height: 500px;
 }

@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MyMap from './MyMap';
+// import * as LocationsAPI from './LocationsAPI';
 
 class App extends Component {
+  state= {
+    allLocations: []
+  }
+
+  componentDidMount() {
+    // LocationsAPI.getAll().then((allLocations) => {
+    //   this.setState({allLocations: allLocations})
+    // })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+       <MyMap
+          // allLocations = { this.state.allLocations }
+       />   
+    )
   }
 }
 
-export default App;
+export default App
